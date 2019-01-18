@@ -1,0 +1,34 @@
+{
+  "name": "gulp-kuba",
+  "version": "1.0.0",
+  "description": "my npm conf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "@types/gulp": "^4.0.5",
+    "@types/gulp-plumber": "0.0.32",
+    "@types/gulp-sass": "0.0.31",
+    "@types/gulp-sourcemaps": "0.0.32"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KubaWojtaszczyk/newWeb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KubaWojtaszczyk/newWeb/issues"
+  },
+  "homepage": "https://github.com/KubaWojtaszczyk/newWeb#readme"
+}

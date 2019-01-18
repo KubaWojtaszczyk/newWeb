@@ -1,0 +1,78 @@
+.header {
+    height: 120vh;
+    max-height: 1000px;
+    margin: 0 auto;
+    position: relative;
+    .container {
+        max-width: 1300px;
+        width: 120vw;
+        padding: 50px 0;
+    };
+    &__content{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        &-image {
+            background: url('../images/dummy.jpg') no-repeat center center local;
+            background-size: cover;
+            height: 100%;
+        }
+        &-items {
+            position: absolute;
+            left: 15%;
+            top: 50%;
+            width: 300px;
+            text-align: center;
+            background-color: $elements-color;
+            &--heading{
+            font-family: $header-font-bold;
+            font-size: 30px;
+            color: $main-text-color;
+            margin-bottom: 10px;
+            padding: 30px 30px 10px 30px;
+            line-height: 1.2;
+            }
+            &--text {
+                font-family: $main-font;
+                font-size: 16px;
+                text-align: center;
+                color: $main-text-color;
+                padding: 0 30px 30px 30px;
+                line-height: 1.5;
+                text-transform: lowercase;
+            }
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    &__container{
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: cover;
+    }
+    &__item{
+        font-family: $main-font;
+        font-size: 18px;
+        color: $main-text-color;
+        &:hover .nav__link {
+            color: $elements-color;
+        }
+    }
+}
+
+.logo {
+    &__text {
+        font-family: $header-font-logo;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-left: 30px;
+        color:  $main-text-color;
+    }
+}
+

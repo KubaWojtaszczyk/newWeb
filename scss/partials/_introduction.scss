@@ -1,0 +1,50 @@
+.introductions {
+    padding-top: 100px;
+    .introduction {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-row {
+            width: 400px;
+            &:nth-child(2) {
+                width: 430px;
+            }
+        }
+        &-img {
+            max-width: 500px;
+            box-shadow: 35px 25px 0px 14px rgba(238,231,100,1);
+        }
+        &-heading {
+            font-family: $header-font-bold;
+            font-size: 150px;
+            color: $elements-color;
+            margin-bottom: 50px;
+        }
+        &-text {
+            font-family: $main-font;
+            font-size: 24px;
+            color: $main-text-color;
+            line-height: 1.5;
+            text-transform: lowercase;
+        }
+        &-link {
+            display: inline-block;
+            font-family: $main-font;
+            font-size: 50px;
+            font-weight: 1000;
+            color: $main-text-color;
+            background-color: $elements-color;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            padding-top: 20px;
+            padding-left: 5px;
+        }
+        &-link--container {
+            text-align:center;
+            margin-top: 100px;
+        }
+    }
+}
+
+
