@@ -1,8 +1,7 @@
 .business {
-    margin-top: 100px;
+    margin-top: 200px;
     &-main {
-        display: flex;
-        justify-content: flex-start;
+        @include section-main;
     }
     &-row {
         width: 400px;
@@ -11,62 +10,45 @@
         }
     }
     &-heading {
-        font-family: $header-font-bold;
-        font-size: 50px;
-        text-transform: lowercase;
-        color: $sections-color;
-        margin-bottom: 100px;
+        @include section-heading;
+        color: $business-color;
     }
 
     &-text {
-        font-family: $main-font;
-        font-size: 16px;
-        text-transform: lowercase;
+        @include section-text;
         color: $main-text-color;
-        line-height: 1.5;
     }
 
     &-img {
-        position: absolute;
-        max-width: 600px;
-        box-shadow:  -35px -25px 0px 14px rgba(5,138,101,1);
+        @include section-img;
+        box-shadow:  -28px -28px 0px 14px rgba(5,138,101,1);
     }
     &-link {
-        position: relative;
-        font-family: $main-font;
-        font-size: 50px;
-        font-weight: 1000;
-        background-color: $sections-color;
-        padding: 25px;
-        top: 320px;
+        @include section-link;
+        background-color: $business-color;
+        top: 314px;
         right: -522px;
     }
     &-testimonial {
-        margin-top: 100px;
-        display: flex;
-        background-color: $sections-color;
-        filter: brightness(80%);
+        @include testimonial;
+        margin-top: 150px;
+        background-color: $business-color;
         &--img {
-            width: 50%;
-            height: 33vw;
+            @include testimontial-img;
             &:hover {
                 opacity: 0.5;
               }
         }
         &-text {
-            font-family: $main-font;
-            font-size: 24px;
-            text-align: center;
-            color: white;
-            text-transform: lowercase;
-            height: 33vw;
-            
+            @include testimonial-text;
             &:hover {
                 opacity: 0.5;
               }
             &--quote {
-               padding: 200px 50px 50px 50px;
-               line-height: 1.5;
+               @include testimonial-quote;
+            }
+            &--signiture {
+                @include testimonial-signiture;
             }
         }
     }

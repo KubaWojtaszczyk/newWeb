@@ -1,0 +1,85 @@
+@mixin section-main {
+    display: flex;
+    justify-content: flex-start;
+    @content;
+};
+
+@mixin section-heading {
+    font-size: 50px;
+    font-family: $header-font-bold;
+    text-transform: lowercase;
+    margin-bottom: 50px;
+    @content;
+};
+
+@mixin section-text {
+    font-family: $main-font;
+    font-size: 18px;
+    text-transform: lowercase;
+    line-height: 1.5;
+    @content;
+};
+
+@mixin section-img {
+    position: absolute;
+    max-width: 600px;
+    @content;
+}
+
+@mixin section-link {
+    position: relative;
+    font-family: $main-font;
+    font-size: 50px;
+    font-weight: 1000;
+    padding: 25px;
+    @content;
+};
+
+@mixin testimonial {
+    display: flex;
+    filter: brightness(80%);
+    @content;
+};
+
+@mixin testimontial-img {
+    width: 50%;
+    height: 33vw;
+    @content;
+}
+
+@mixin testimonial-text {
+    font-family: $main-font;
+    padding: 150px 20px 0 20px;
+    font-size: 20px;
+    text-align: center;
+    color: $reset-color;
+    text-transform: lowercase;
+    height: 33vw;
+    @content;
+}
+
+@mixin testimonial-quote {
+    line-height: 1.5;
+}
+
+@mixin testimonial-signiture {
+    padding-top: 50px;
+}
+
+@mixin input {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    color: $main-text-color;
+    background-color: inherit;
+    width: 30vw;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid $reset-color;
+    padding: 20px 0;
+    line-height: 2;
+    &::placeholder {
+        color: $reset-color;
+        text-transform: lowercase;
+    }
+}

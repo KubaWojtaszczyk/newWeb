@@ -1,5 +1,5 @@
 .introductions {
-    padding-top: 100px;
+    margin-top: 150px;
     .introduction {
         display: flex;
         justify-content: space-between;
@@ -12,7 +12,7 @@
         }
         &-img {
             max-width: 500px;
-            box-shadow: 35px 25px 0px 14px rgba(238,231,100,1);
+            box-shadow: 30px 30px 0px 14px rgba(238,231,100,1);
         }
         &-heading {
             font-family: $header-font-bold;
@@ -22,7 +22,7 @@
         }
         &-text {
             font-family: $main-font;
-            font-size: 24px;
+            font-size: 18px;
             color: $main-text-color;
             line-height: 1.5;
             text-transform: lowercase;

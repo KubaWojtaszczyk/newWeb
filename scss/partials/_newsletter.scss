@@ -1,0 +1,59 @@
+.newsletter {
+    background-color: $elements-color;
+    height: 33vw;
+    margin-top: 100px;
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-row {
+        width: 500px;
+        text-align: center;
+        margin-top: 75px;
+    }
+    &-text {
+        text-transform: lowercase;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+    &-heading {
+        font-family: $header-font-bold;
+        font-size: 100px;
+        color: $reset-color;
+        text-transform: lowercase;
+        margin-bottom: 75px;
+    }
+    &-list {
+        &--label {
+            display: none;
+        }
+    }
+    &-input--name{
+        @include input;
+        margin-bottom: 50px;
+    }
+    &-input--email {
+        @include input;
+        margin-bottom: 20px;
+    }
+    &-button {
+        position: relative;
+        height: 10vh;
+    }
+    &-input--button {
+        cursor: pointer;
+        position: absolute;
+        right: -144px;
+        top: 4px;
+        border: 0;
+        background-color: $reset-color;
+        color: $main-text-color;
+        font-family: $main-font;
+        font-size: 50px;
+        font-weight: 1000;
+        padding: 25px;
+        outline: none;
+    }
+}

@@ -1,0 +1,61 @@
+.travel {
+    margin-top: 200px;
+    &-main {
+        @include section-main;
+        margin-bottom: 200px;
+        &--reverse {
+            flex-direction: row-reverse;
+        }
+    }
+    &-row {
+        width: 400px;
+        &:nth-child(2) {
+            width: 600px;
+        }
+    }
+    &-heading {
+        @include section-heading;
+        color: $travel-color;
+    }
+
+    &-text {
+        @include section-text;
+        color: $main-text-color;
+    }
+
+    &-img {
+        @include section-img;
+        box-shadow:  28px 28px 0px 14px rgba(255,99,71,1);
+    }
+    &-link {
+        @include section-link;
+        background-color: $travel-color;
+        top: 33px;
+        left: 0px;
+    }
+    &-testimonial {
+        @include testimonial;
+        background-color: $travel-color;
+        &--reverse {
+            flex-direction: row-reverse;
+        }
+        &--img {
+            @include testimontial-img;
+            &:hover {
+                opacity: 0.5;
+              }
+        }
+        &-text {
+            @include testimonial-text;
+            &:hover {
+                opacity: 0.5;
+              }
+            &--quote {
+               @include testimonial-quote;
+            }
+            &--signiture {
+                @include testimonial-signiture;
+            }
+        }
+    }
+}

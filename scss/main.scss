@@ -2,9 +2,14 @@
 @import "modules/fonts.scss";
 @import "modules/reset.scss";
 @import "modules/colors.scss";
+@import "modules/mixins.scss";
 
 // Partials
 @import "partials/base.scss";
 @import "partials/header.scss";
 @import "partials/introduction.scss";
 @import "partials/business.scss";
+@import "partials/travel.scss";
+@import "partials/family.scss";
+@import "partials/newsletter.scss";
+@import "partials/footer.scss";

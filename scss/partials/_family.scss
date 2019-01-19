@@ -1,0 +1,55 @@
+.family {
+    margin-top: 200px;
+    &-main {
+        @include section-main;
+        margin-bottom: 250px;
+    }
+    &-row {
+        width: 400px;
+        &:nth-child(2) {
+            width: 600px;
+        }
+    }
+    &-heading {
+        @include section-heading;
+        color: $family-color;
+    }
+
+    &-text {
+        @include section-text;
+        color: $main-text-color;
+    }
+
+    &-img {
+        @include section-img;
+        box-shadow:  -28px -28px 0px 14px rgba(150,206,180,1);
+    }
+    &-link {
+        @include section-link;
+        background-color: $family-color;
+        top: 316px;
+        right: -522px;
+    }
+    &-testimonial {
+        @include testimonial;
+        background-color: $family-color;
+        &--img {
+            @include testimontial-img;
+            &:hover {
+                opacity: 0.5;
+              }
+        }
+        &-text {
+            @include testimonial-text;
+            &:hover {
+                opacity: 0.5;
+              }
+            &--quote {
+               @include testimonial-quote;
+            }
+            &--signiture {
+                @include testimonial-signiture;
+            }
+        }
+    }
+}
