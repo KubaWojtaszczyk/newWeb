@@ -1,9 +1,7 @@
 .introductions {
     margin-top: 150px;
     .introduction {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+       @include introduction;
         &-row {
             width: 400px;
             &:nth-child(2) {

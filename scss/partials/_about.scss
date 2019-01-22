@@ -1,0 +1,70 @@
+.about-header {
+     height: 25vh;
+     max-height: 1000px;
+     margin: 0 auto;
+     position: relative;
+     &--sticky {
+         position: fixed;
+         background-color: $reset-color;
+         width: 100vw;
+         height: 15vh;
+     }
+     .container {
+         @include header-container;
+     }
+ }
+
+ .about-logo__text--sticky {
+    font-size: 25px;
+ }
+
+.about {
+    &-image {
+        background: url('../images/table.jpg') no-repeat center center  ;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        &__text--container {
+            padding-top: 445px;
+            text-align: center;
+        }
+        &__text--heading {
+            font-family: $header-font-bold;
+            font-size: 150px;
+            color: $reset-color;
+            text-align: center;
+            text-transform: lowercase;
+            background-color: $elements-color;
+            width: 60%;
+            padding-bottom: 30px;
+        }
+    }
+    &-introductions {
+        margin-top: 150px;
+    }
+    &-introduction {
+        @include introduction;
+        &--row {
+            width: 450px;
+            &:nth-child(2) {
+                width: 400px;
+            }
+        }
+        &--img {
+            max-width: 600px;
+           
+        }
+        &--text {
+            font-family: $main-font;
+            font-size: 18px;
+            text-transform: lowercase;
+            line-height: 1.5;
+            span {
+                font-family: $header-font-logo;
+                font-size: 24px;
+                color: $elements-color;
+            }
+        }
+    }
+    
+}

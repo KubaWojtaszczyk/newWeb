@@ -12,12 +12,12 @@
 <body>
     <header class="header">
         <div class="container container-relative">
-            <nav class="nav">
-                <a href="#" class="logo">
+            <nav class="nav ">
+                <a href="index.html" class="logo">
                     <h1 class="logo__text">For all of US</h1>
                 </a>
                 <ul class="nav__container">
-                    <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About us</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">For Business</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">For Home</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">For Travel</a></li>
@@ -25,6 +25,7 @@
                 </ul>
             </nav>
         </div>
+    </div>
         <div class="header__content">
                 <div class="header__content-image">
                     <div class="header__content-items">
@@ -45,7 +46,7 @@
                     <div class="introduction-row">
                         <h2 class="introduction-heading">hello</h2>
                         <p class="introduction-text">Ub woofer blop long woofer such treat, long woofer. Pupper long woofer bork blop floofs, blep length boy much ruin diet. Heckin good boys and girls lotsa pats maximum borkdrive thicc.</p>
-                        <div class="introduction-link--container"><a href="#" class="introduction-link">></a></div>
+                        <div class="introduction-link--container"><a href="about.html" class="introduction-link">></a></div>
                     </div>
                 </article>
             </div>
@@ -125,29 +126,31 @@
                 <article class="newsletter-main">
                         <div class="newsletter-row">
                             <p class="newsletter-text">Stay in the loop, subscribe to our</p>
-                            <h3 class="newsletter-heading">Newsletter</h3>  
+                            <h3 class="newsletter-heading">Newsletter</h3>
                         </div>
-                        <form class="newsletter-row">
+
+                        <form  action="#" ' class="newsletter-row newsletter-row--form">
                             <div class="newsletter-form--container">
                                 <ul class="newsletter-list">
                                     <li class="newsletter-list--items">
                                         <label class="newsletter-list--label">Your name</label>
                                         <div class="newsletter-list--input">
-                                            <input name="input_1" type="text" class="newsletter-input--name" placeholder="Your name">
+                                            <input name="user" type="text"  class="newsletter-input--name" placeholder="Your name" autocomplete="off">
                                         </div>
                                     </li>
                                     <li class="newsletter-list--items">
                                         <label class="newsletter-list--label">E-mail</label>
                                         <div class="newsletter-list--input">
-                                            <input name="input_2" type="email" class="newsletter-input--email" placeholder="Your e-mail address">
+                                            <input name="email" type="email" class="newsletter-input--email" placeholder="Your e-mail address" autocomplete="off" >
                                         </div>
                                     </li>
                                 </ul>
                                 <div class="newsletter-button">
-                                    <input type="submit" class="newsletter-input--button" value=">">
+                                    <input  type="submit" class="newsletter-input--button" value=">">
                                 </div>
                             </div>
                         </form>
+
                 </article>
             </div>
         </section>
@@ -162,7 +165,7 @@
                     <div>
                         <h4 class="footer-heading">Contact</h4>
                         <p class="footer-text">T: 432 130 943 </p>
-                        <p class="footer-text">contact@faou.com</p>
+                        <a href="mailto:contact@faou.com" class="footer-text">contact@faou.com</a>
                     </div>
                     <div>
                         <h4 class="footer-heading">Address</h4>
@@ -171,16 +174,13 @@
                     </div>
                     <div>
                         <h4 class="footer-heading">Social</h4>
-                        <a class="footer-text footer-text--link" href="#">Facebook</a> 
-                        <a class="footer-text footer-text--link" href="#">Instagram</a> 
-                       
+                        <a class="footer-text footer-text--link" href="#">Facebook</a>
+                        <a class="footer-text footer-text--link" href="#">Instagram</a>
                     </div>
                 </div>
             </div>
-
         </footer>
-
-
+        <script src="./js/main.js"></script>
     </main>
 </body>
 </html>

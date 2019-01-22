@@ -4,9 +4,7 @@
     margin: 0 auto;
     position: relative;
     .container {
-        max-width: 1300px;
-        width: 120vw;
-        padding: 50px 0 25px 0;
+        @include header-container;
     };
     &__content{
         position: relative;
