@@ -40,7 +40,7 @@
         }
     }
     &-introductions {
-        margin-top: 150px;
+        margin: 100px 0;
     }
     &-introduction {
         @include introduction;
@@ -52,7 +52,6 @@
         }
         &--img {
             max-width: 600px;
-           
         }
         &--text {
             font-family: $main-font;
@@ -66,5 +65,104 @@
             }
         }
     }
-    
+    &-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 250px 250px 250px;
+        grid-template-areas: "ceo" "member1" "member2" "member3" "member4" "member5";
+        &--member {
+            display: flex;
+            justify-content: space-between;
+            &--img {
+                transition: transform .8s ease-in-out;
+                -webkit-transition: -webkit-transform .8s ease-in-out;
+                &:hover {
+                    transform: scale(1.025);
+                    opacity: .7;
+                }
+            }
+           &--text {
+                text-align: start;
+                padding-left: 20px;
+                height: 100%;
+                width: 50%;
+                padding-top: 50px;
+                text-transform: lowercase;
+                &:nth-child(odd){
+                    text-align: end;
+                    padding-right: 20px;
+                }
+                h2 {
+                    font-family: $header-font-bold;
+                    color: $main-text-color;
+                    font-size: 30px;
+                    padding-bottom: 100px;
+                }
+                p{
+                    font-size: 16px;
+                    padding-bottom: 10px;
+                }
+                a {
+                    font-size: 16px;
+                }
+
+            }
+            &__ceo{
+                grid-area: "ceo";
+                &--img {
+                height: 100%;
+                width: 50%;
+                background: url(../images/member1.jpg) no-repeat center;
+                background-size: cover;
+                }
+            }
+            &__first {
+                grid-area: "member1";
+                &--img {
+                    height: 100%;
+                    width: 50%;
+                    background: url(../images/member2.jpg) no-repeat center;
+                    background-size: cover;
+                    }
+            }
+            &__second {
+                grid-area: "member2";
+                &--img {
+                    height: 100%;
+                    width: 50%;
+                    background: url(../images/member3.jpg) no-repeat center;
+                    background-size: cover;
+                    }
+            }
+            &__third {
+                grid-area: "member3";
+                &--img {
+                    height: 100%;
+                    width: 50%;
+                    background: url(../images/member4.jpg) no-repeat center;
+                    background-size: cover;
+                    }
+            }
+            &__forth {
+                grid-area: "member4";
+                &--img {
+                    height: 100%;
+                    width: 50%;
+                    background: url(../images/member5.jpg) no-repeat center;
+                    background-size: cover;
+                    }
+            }
+            &__fifth {
+                grid-area: "member5";
+                &--img {
+                    height: 100%;
+                    width: 50%;
+                    background: url(../images/member6.jpg) no-repeat center;
+                    background-size: cover;
+                    }
+            }
+        }
+    }
 }
+
+
